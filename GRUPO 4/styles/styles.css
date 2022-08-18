@@ -1,0 +1,46 @@
+.footerContainer {
+    height: 3rem;
+    background-color: rgb(9, 127, 133);
+  }
+  
+  .headerContainer {
+    height: 4rem;
+  }
+  
+  .mainContainer {
+    height: calc(100vh - 7rem);
+    background-color: rgba(177, 225, 222, 0.66);
+    overflow-y: auto;
+    padding: 5rem;
+  }
+  
+  .mainContainer > div:first-child {
+    width: 50%;
+  }
+  
+  .mainContainer > div:nth-child(2) > div:first-child {
+    border-bottom: 3px grey solid;
+    padding-bottom: 1rem;
+  }
+  
+  .headerContainer > nav {
+    background-color: rgb(47, 193, 237);
+    height: 100%;
+  }
+  
+  .mainContainer > div:nth-child(2) thead tr {
+    background-color: rgb(3, 60, 107);
+    color: aliceblue;
+  }
+  
+  .mainContainer > div:nth-child(2) tbody tr:nth-child(2n - 1) {
+    background-color: rgb(9, 99, 69);
+  }
+  
+  .mainContainer > div:nth-child(2) tbody tr:nth-child(2n) {
+    background-color: rgba(4, 79, 54, 0.637);
+  }
+  
+  .mainContainer > div:nth-child(2) table td {
+    color: aliceblue;
+  }
