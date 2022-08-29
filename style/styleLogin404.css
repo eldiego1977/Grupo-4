@@ -1,0 +1,92 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+:root {
+    --color1: #f9f2ed;
+    --color2:  linear-gradient(32deg, rgba(121,210,185,1) 41%, rgba(128,226,164,1) 52%);
+    --color3: #ffb562;
+}
+.input {
+    border-radius: 2rem;
+}
+
+.navBar {
+  background: rgb(121,210,185);
+  background: linear-gradient(32deg, rgba(121,210,185,1) 41%, rgba(128,226,164,1) 52%);
+}
+.modal-bodyi {
+    background-image: url(../img/tumblr_m65ijilFeX1rwl09fo1_500.webp);
+    color: black;
+}
+
+main{       
+    background-color: var(--color1);    
+}
+.noFound{
+  max-height: 100vh - calc(7rem);
+}
+.bi {
+    font-size: 2em;
+}
+.textNotFound{
+    position:relative;
+    left:50%;
+    top:50%;
+    -webkit-transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+    max-width:767px;
+    width:100%;
+    line-height: 2.4;
+    text-align: center;
+}
+
+
+footer {
+  background: rgb(121,210,185);
+  background: linear-gradient(32deg, rgba(121,210,185,1) 41%, rgba(128,226,164,1) 52%);
+}
+
+.body {
+    background-color: var(--color1);
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;  
+  }
+  
+  .logo{
+    max-width: 10%;
+    max-height: 10%;
+    align-content: center;
+  }
+  .form-signin {
+    width: 40%;   
+    padding: 5px;
+    margin: auto;
+  }
+  
+  .form-signin .checkbox {
+    font-weight: 400;
+  }
+  
+  .form-signin .form-floating:focus-within {
+    z-index: 2;
+  }
+  
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  /* estilos login*/
+.bd {  
+  background: var(--color2);
+  background: linear-gradient(to right, var(--color2), var(--color3) );
+}
