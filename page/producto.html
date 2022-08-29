@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventas Online - Rolling Kiosco</title>
+    <link rel="stylesheet" href="./../style/style.css">
+    <link rel="stylesheet" href="./../style/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">    
+    
+</head>
+<body>
+
+  <header class="app-header navbar">
+    <nav class="navbar navbar-expand-md fixed-top navbar-light colorFondo">
+
+      <a class="navbar-brand ms-3" data-bs-toggle="offcanvas" href="#baraLateral" role="button" aria-controls="baraLateral">
+        &#9776;</a>
+
+      
+      <a class="navbar-brand me-3" style="margin-left: 1rem;" href="#">Rolling Kiosco</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">                    
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa fa-credit-card"></i> Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#acercaModal"><i class="fa fa-eye-slash"></i> Acerca de...</a>
+          </li>        
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-3" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline-success me-4" type="submit" style="width: 180px;"><i class="fa fa-credit-card"></i> Buscar</button>
+        </form> 
+        <ul class="navbar-nav me-2 mb-2 mb-md-0">                              
+          <li class="nav-item d-flex navbar-light">
+            <a class="nav-link text-decoration-none" href="./page/login.html"><i class="fa fa-user-md"></i> Login</a>
+          </li>
+        </ul>        
+      </div>
+    </nav>      
+  </header> 
+
+  <!-- Begin page content -->
+  <main>    
+    <!-- BARRA LATERAL --->
+    <div class="offcanvas offcanvas-start colorFondo" tabindex="-1" id="baraLateral" aria-labelledby="baraLateralLabel" >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="baraLateralLabel">Categorias</h5>
+        <button type="button" class="btn-close text-reset" data-mdb-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="list-unstyled ps-0">
+          <li class="mb-1">
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+              <a href="#limpieza"> Bebidas</a> 
+            </button>
+            
+          </li>
+          <li class="mb-1">
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+              Alimentos
+            </button>            
+          </li>
+          <li class="mb-1">
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+              Limpieza
+            </button>            
+          </li>
+          <li class="border-top my-3"></li>          
+        </ul>
+      </div>
+    </div>    
+    <!--Titulos-->    
+    <div class="container-fluid d-flex justify-content-start" id="bebidas">
+      <h3>Bebidas</h3> <hr>
+    </div>
+    <!----------------------------------------------------------->
+    <!--Card1-->    
+    <div class="row row-cols-1 row-cols-md-4 g-4 ms-5 me-5">                  
+      <div class="col">         
+        <div class="card cardBebida">
+          <img src="./img/latacoca2.png" class="card-img-top" alt="...">
+          <hr class="linea">
+          <div class="card-body">                        
+            <p class="card-text text-xl-center">Lata de Coca 500 cm</p>
+            <p class="text-start text-opacity-100" style="font-size: 18px; font-weight: bold;">$150</p>
+            <div class="d-flex justify-content-center align-content-between">
+              <a class="btn btn-primary"><i class="fa fa-shopping-bag"></i> Comprar</a>              
+            </div>
+          </div>          
+        </div>
+      </div>     
+      
+    </div>
+    <!----------------------------------------------------------->
+    
+    <br>  
+  </main>  
+  <!------------------------------------------------------------------------------------------------------>
+  <!--footer--> 
+  <footer class="d-flex  flex-wrap justify-content-between align-items-center py-1 my-4 colorFondo">
+
+    <p class="col-md-4 mb-0 text-muted">&copy; 2022 Rolling Kiosco </p>
+
+    <a
+      class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none" class="fuente">
+      <img src="./img/icon.webp" width="25rem" height="25rem">
+    </a>
+    <ul class="nav col-md-4 justify-content-end">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contacto</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Nosotros</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Redes</a></li>
+      <li class="nav-item"><a href="./404.html" class="nav-link px-2 text-muted"  >trabaja con nosotros</a> </li>
+    </ul>
+  </footer>
+
+  <!-- Modal Acerca de...-->
+<div class="modal fade" id="acercaModal" tabindex="-1" aria-labelledby="acercaModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="acercaModalLabel">Equipo Desarollo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>        
+      </div>
+    </div>
+  </div>
+</div>
+<!----------------------------------------------------------->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
+</body>
+</html>
